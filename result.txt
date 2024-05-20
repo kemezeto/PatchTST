@@ -1,0 +1,6 @@
+test_PatchTST_ETTh1_ftM_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_0  
+mse:0.37813472747802734, mae:0.40002092719078064, rse:0.5830941796302795
+
+test_PatchTST_ETTh1_ftM_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_1  
+mse:0.38041824102401733, mae:0.39519691467285156, rse:0.5848521590232849
+
