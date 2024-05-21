@@ -21,9 +21,11 @@ if __name__ == '__main__':
     parser.add_argument('--data', type=str, default='ETTh1', help='dataset type')
     parser.add_argument('--root_path', type=str, default='./data/ETT/', help='root path of the data file')
     parser.add_argument('--data_path', type=str, default='ETTh1.csv', help='data file')
+                                                                                                                                                                                                                
     parser.add_argument('--features', type=str, default='M',
                         help='forecasting task, options:[M, S, MS]; M:multivariate predict multivariate, S:univariate predict univariate, MS:multivariate predict univariate')
     parser.add_argument('--target', type=str, default='OT', help='target feature in S or MS task')
+    # 时间步长
     parser.add_argument('--freq', type=str, default='h',
                         help='freq for time features encoding, options:[s:secondly, t:minutely, h:hourly, d:daily, b:business days, w:weekly, m:monthly], you can also use more detailed freq like 15min or 3h')
     parser.add_argument('--checkpoints', type=str, default='./checkpoints/', help='location of model checkpoints')
@@ -40,7 +42,9 @@ if __name__ == '__main__':
     # PatchTST
     parser.add_argument('--fc_dropout', type=float, default=0.05, help='fully connected dropout')
     parser.add_argument('--head_dropout', type=float, default=0.0, help='head dropout')
+    # patch长度
     parser.add_argument('--patch_len', type=int, default=16, help='patch length')
+    # S步长
     parser.add_argument('--stride', type=int, default=8, help='stride')
     parser.add_argument('--padding_patch', default='end', help='None: None; end: padding on the end')
     parser.add_argument('--revin', type=int, default=1, help='RevIN; True 1 False 0')
@@ -48,6 +52,7 @@ if __name__ == '__main__':
     parser.add_argument('--subtract_last', type=int, default=0, help='0: subtract mean; 1: subtract last')
     parser.add_argument('--decomposition', type=int, default=0, help='decomposition; True 1 False 0')
     parser.add_argument('--kernel_size', type=int, default=25, help='decomposition-kernel')
+    # 多通道开关
     parser.add_argument('--individual', type=int, default=0, help='individual head; True 1 False 0')
 
     # Formers 
@@ -74,7 +79,9 @@ if __name__ == '__main__':
 
     # optimization
     parser.add_argument('--num_workers', type=int, default=0, help='data loader num workers')
-    parser.add_argument('--itr', type=int, default=2, help='experiments times')
+    # 实验次数
+    parser.add_argument('--itr', type=int, default=1, help='experiments times')
+    # 每次实验训练轮数
     parser.add_argument('--train_epochs', type=int, default=100, help='train epochs')
     parser.add_argument('--batch_size', type=int, default=128, help='batch size of train input data')
     parser.add_argument('--patience', type=int, default=100, help='early stopping patience')

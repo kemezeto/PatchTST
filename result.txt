@@ -4,3 +4,12 @@ mse:0.37813472747802734, mae:0.40002092719078064, rse:0.5830941796302795
 test_PatchTST_ETTh1_ftM_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_1  
 mse:0.38041824102401733, mae:0.39519691467285156, rse:0.5848521590232849
 
+test_PatchTST_ETTh1_ftM_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_0  
+mse:0.385952353477478, mae:0.4030482769012451, rse:0.589090883731842
+
+test_PatchTST_alibaba_ftM_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_0  
+mse:0.5097556114196777, mae:0.3951912522315979, rse:0.6879850029945374
+
+test_PatchTST_ETTh1_ftM_sl96_ll48_pl96_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_test_0  
+mse:0.3786325752735138, mae:0.39480724930763245, rse:0.5834779143333435
+
