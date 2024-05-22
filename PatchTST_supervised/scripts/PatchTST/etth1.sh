@@ -5,6 +5,7 @@ fi
 if [ ! -d "./logs/LongForecasting" ]; then
     mkdir ./logs/LongForecasting
 fi
+# 回望窗口长度
 seq_len=336
 model_name=PatchTST
 
